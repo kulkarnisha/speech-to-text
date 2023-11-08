@@ -1,0 +1,123 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    fill: #FFF;
+
+   
+}
+
+
+#recognizedText {
+    position: absolute;
+    color: var(--gray-medium-gray, #6E6B79);
+    font-family: Titillium Web;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    bottom: 220px; /* Adjust this value if needed */
+    left: 320px; /* Adjust this value if needed */
+}
+
+
+
+
+
+
+#startSpeechRecognition {
+    position: absolute;
+    bottom: 350px;
+    display: inline-flex;
+    padding: 63px 70px 61px 64px;
+    align-items: center;
+    border-style: none;
+    background-color: transparent;
+}
+
+#secondButton {
+    position:absolute;
+    bottom: 350px;
+    display: inline-flex;
+    padding: 63px 70px 61px 64px;
+    align-items: center;
+    border-style: none;
+    background-color: transparent;
+
+}
+
+
+
+
+.line {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 520px;
+
+}
+
+#languageSelect {
+    color: #000046;
+    border-radius: 6px;
+    border: 2px solid #5000F2;
+    font-family: Titillium Web;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: inline-flex;
+    padding: 8px 10px;
+    left: 1100px;
+    position: absolute;
+    bottom: 220px;
+    justify-content: center;
+    align-items: center;
+    gap: 54px;
+
+
+}
+
+#Translate {
+    color: #FFF;
+    font-family: Titillium Web;
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+    border-radius: 6px;
+    background: #5000F2;
+    display: inline-flex;
+    padding: 10px 40px;
+
+    position: absolute;
+    left: 685px;
+    bottom: 130px;
+    border-style: none;
+}
+
+
+#restartButton {
+    color: #FFF;
+    font-family: Titillium Web;
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+    border-radius: 6px;
+    background: #5000F2;
+    display: inline-flex;
+
+
+    position: absolute;
+    left: 685px;
+    bottom: 130px;
+    border-style: none;
+
+    padding: 10px 47px;
+    justify-content: center;
+    align-items: center;
+}

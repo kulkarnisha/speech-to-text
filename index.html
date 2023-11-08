@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speak To Text</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webkitSpeechRecognition/0.1.0/webkitSpeechRecognition.js"></script>
+
+</head>
+<body>
+  
+
+    <button id ="startSpeechRecognition">
+    <svg xmlns="http://www.w3.org/2000/svg" width="204" height="204" viewBox="0 0 204 204" fill="none">
+        <path d="M102.222 203.661C158.245 203.661 203.661 158.245 203.661 102.222C203.661 46.1987 158.245 0.782959 102.222 0.782959C46.199 0.782959 0.783203 46.1987 0.783203 102.222C0.783203 158.245 46.199 203.661 102.222 203.661Z" fill="url(#paint0_linear_1_3777)"/>
+        <defs>
+          <linearGradient id="paint0_linear_1_3777" x1="0.783903" y1="0.783659" x2="203.661" y2="203.661" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#D6C9F8"/>
+            <stop offset="1" stop-color="#3D2678"/>
+          </linearGradient>
+        </defs>
+        
+        
+        <svg width: 201.576px;
+        height: 200.278px;>
+            <path fill-rule="evenodd" clip-rule="evenodd" 
+            d="M102.072 21.2974C57.519 21.2974 21.4412 57.328 21.4412 101.726C21.4412 142.268 51.532 175.846 90.685 181.36C96.374 182.161 100.337 187.424 99.536 193.113C98.735 198.803 93.473 202.766 87.783 201.965C38.54 195.029 0.633301 152.819 0.633301 101.726C0.633301 45.793 46.071 0.489502 102.072 0.489502C158.073 0.489502 203.511 45.793 203.511 101.726C203.511 152.819 165.604 195.029 116.361 201.965C110.671 202.766 105.409 198.803 104.608 193.113C103.807 187.424 107.769 182.161 113.459 181.36C152.612 175.846 182.703 142.268 182.703 101.726C182.703 57.328 146.625 21.2974 102.072 21.2974Z" fill="#08080A" fill-opacity="0.45"/>
+          </svg>
+          
+           <svg x="77" y="77" width="48" height="64"  >
+            <path 
+            d="M24 40.667C21.222 40.667 18.861 39.695 16.917 37.75C14.972 35.806 14 33.445 14 30.667V10.667C14 7.88899 14.972 5.52798 16.917 3.58298C18.861 1.63898 21.222 0.666992 24 0.666992C26.778 0.666992 29.139 1.63898 31.083 3.58298C33.028 5.52798 34 7.88899 34 10.667V30.667C34 33.445 33.028 35.806 31.083 37.75C29.139 39.695 26.778 40.667 24 40.667ZM20.667 64V53.75C14.889 52.972 10.111 50.389 6.33298 46C2.55598 41.611 0.666992 36.5 0.666992 30.667H7.33298C7.33298 35.278 8.95798 39.208 12.208 42.458C15.458 45.708 19.389 47.333 24 47.333C28.611 47.333 32.542 45.708 35.792 42.458C39.042 39.208 40.667 35.278 40.667 30.667H47.333C47.333 36.5 45.445 41.611 41.667 46C37.889 50.389 33.111 52.972 27.333 53.75V64H20.667ZM24 34C24.945 34 25.736 33.681 26.375 33.042C27.014 32.403 27.333 31.611 27.333 30.667V10.667C27.333 9.72199 27.014 8.93099 26.375 8.29199C25.736 7.65299 24.945 7.33298 24 7.33298C23.056 7.33298 22.264 7.65299 21.625 8.29199C20.986 8.93099 20.667 9.72199 20.667 10.667V30.667C20.667 31.611 20.986 32.403 21.625 33.042C22.264 33.681 23.056 34 24 34Z" fill="white"/>
+          </svg>
+          </svg>
+        </svg>
+    </button>
+   
+   
+   
+   
+    <button id="secondButton" style="display: none;" Display="block">
+   <svg xmlns="http://www.w3.org/2000/svg" width="204" height="204" viewBox="0 0 204 204" fill="none">
+        <circle cx="102.223" cy="102.223" r="101.439" transform="rotate(45 102.223 102.223)" fill="url(#paint0_linear_11_6002)"/>
+        <circle cx="102.223" cy="102.223" r="100.788" transform="rotate(45 102.223 102.223)" stroke="black" stroke-opacity="0.1" stroke-width="1.3005"/>
+        <defs>
+          <linearGradient id="paint0_linear_11_6002" x1="0.783867" y1="0.783874" x2="203.661" y2="203.661" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FFD2C8"/>
+            <stop offset="1" stop-color="#C11E1E"/>
+          </linearGradient>
+        </defs>
+
+        
+        <svg width:201.576px; height:200.278px;>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M102.072 21.2974C57.5189 21.2974 21.4411 57.3283 21.4411 101.726C21.4411 142.268 51.5318 175.846 90.6846 181.36C96.3744 182.161 100.337 187.424 99.5359 193.113C98.7346 198.803 93.4725 202.766 87.7827 201.965C38.5397 195.029 0.633179 152.819 0.633179 101.726C0.633179 45.7929 46.0706 0.489502 102.072 0.489502C158.073 0.489502 203.511 45.7929 203.511 101.726C203.511 152.819 165.604 195.029 116.361 201.965C110.671 202.766 105.409 198.803 104.608 193.113C103.806 187.424 107.769 182.161 113.459 181.36C152.612 175.846 182.703 142.268 182.703 101.726C182.703 57.3283 146.625 21.2974 102.072 21.2974Z" fill="#08080A" fill-opacity="0.45"/>
+            <path d="M102.072 20.6472C57.1611 20.6472 20.7909 56.9679 20.7909 101.726C20.7909 142.598 51.1256 176.445 90.5939 182.004C95.9281 182.755 99.6433 187.688 98.892 193.023C98.1408 198.357 93.2076 202.072 87.8734 201.321C38.9455 194.43 1.28343 152.489 1.28343 101.726C1.28343 46.1534 46.4284 1.13975 102.072 1.13975C157.715 1.13975 202.86 46.1534 202.86 101.726C202.86 152.489 165.198 194.43 116.27 201.321C110.936 202.072 106.003 198.357 105.252 193.023C104.5 187.688 108.216 182.755 113.55 182.004C153.018 176.445 183.353 142.598 183.353 101.726C183.353 56.9679 146.983 20.6472 102.072 20.6472Z" stroke="black" stroke-opacity="0.06" stroke-width="1.3005" stroke-linecap="round"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="205" height="200" viewBox="0 0 183 181" fill="none">
+              <line opacity="0.2" x1="91.7221" y1="0.893311" x2="91.7221" y2="9.99678" stroke="white" stroke-opacity="0.2" stroke-width="1.3005"/>
+              <line x1="115.261" y1="4.16366" x2="112.905" y2="12.9569" stroke="white" stroke-opacity="0.2" stroke-width="1.3005"/>
+              <line x1="70.4945" y1="171.236" x2="68.1384" y2="180.029" stroke="white" stroke-opacity="0.2" stroke-width="1.3005"/>
+              <line x1="137.152" y1="13.4147" x2="132.601" y2="21.2986" stroke="white" stroke-opacity="0.2" stroke-width="1.3005"/>
+              <line x1="50.6693" y1="163.208" x2="46.1176" y2="171.092" stroke="white" stroke-opacity="0.2" stroke-width="1.3005"/>
+              <line x1="155.903" y1="28.0167" x2="149.466" y2="34.4538" stroke="white" stroke-opacity="0.2" stroke-width="1.3005"/>
+              <line x1="33.5975" y1="150.322" x2="27.1604" y2="156.759" stroke="white" stroke-opacity="0.2" stroke-width="1.3005"/>
+              <line x1="170.235" y1="46.9738" x2="162.351" y2="51.5255" stroke="white" stroke-opacity="0.2" stroke-width="1.3005"/>
+              <line x1="20.4424" y1="133.457" x2="12.5586" y2="138.008" stroke="white" stroke-opacity="0.2" stroke-width="1.3005"/>
+              <line x1="179.173" y1="68.9945" x2="170.38" y2="71.3507" stroke="white" stroke-opacity="0.2" stroke-width="1.3005"/>
+              <line x1="12.1007" y1="113.761" x2="3.30739" y2="116.118" stroke="white" stroke-opacity="0.2" stroke-width="1.3005"/>
+              <line x1="182.107" y1="92.5782" x2="173.003" y2="92.5782" stroke="white" stroke-opacity="0.2" stroke-width="1.3005"/>
+              <line x1="9.14062" y1="92.5782" x2="0.0371541" y2="92.5782" stroke="white" stroke-opacity="0.2" stroke-width="1.3005"/>
+              <line x1="178.836" y1="116.118" x2="170.043" y2="113.761" stroke="white" stroke-opacity="0.2" stroke-width="1.3005"/>
+              <line x1="11.7641" y1="71.3507" x2="2.9708" y2="68.9946" stroke="white" stroke-opacity="0.2" stroke-width="1.3005"/>
+              <line x1="169.585" y1="138.008" x2="161.701" y2="133.457" stroke="white" stroke-opacity="0.2" stroke-width="1.3005"/>
+              <line x1="19.7921" y1="51.5255" x2="11.9082" y2="46.9738" stroke="white" stroke-opacity="0.2" stroke-width="1.3005"/>
+              <line x1="154.983" y1="156.759" x2="148.546" y2="150.322" stroke="white" stroke-opacity="0.2" stroke-width="1.3005"/>
+              <line x1="32.6779" y1="34.4537" x2="26.2408" y2="28.0166" stroke="white" stroke-opacity="0.2" stroke-width="1.3005"/>
+              <line x1="136.026" y1="171.091" x2="131.474" y2="163.208" stroke="white" stroke-opacity="0.2" stroke-width="1.3005"/>
+              <line x1="49.5431" y1="21.2985" x2="44.9913" y2="13.4147" stroke="white" stroke-opacity="0.2" stroke-width="1.3005"/>
+              <line x1="114.005" y1="180.029" x2="111.649" y2="171.236" stroke="white" stroke-opacity="0.2" stroke-width="1.3005"/>
+              <line x1="69.2384" y1="12.9569" x2="66.8822" y2="4.16359" stroke="white" stroke-opacity="0.2" stroke-width="1.3005"/>
+            </svg>
+          </svg>
+
+     
+        <svg width="65" height="75" x="61" y="71">
+        <path d="M40 46.6667C37.2222 46.6667 34.8611 45.6945 32.9166 43.7501C30.9722 41.8056 30 39.4445 30 36.6667V16.6667C30 13.889 30.9722 11.5279 32.9166 9.58341C34.8611 7.63897 37.2222 6.66675 40 6.66675C42.7777 6.66675 45.1388 7.63897 47.0833 9.58341C49.0277 11.5279 50 13.889 50 16.6667V36.6667C50 39.4445 49.0277 41.8056 47.0833 43.7501C45.1388 45.6945 42.7777 46.6667 40 46.6667ZM36.6666 70.0001V59.7501C30.8888 58.9723 26.1111 56.389 22.3333 52.0001C18.5555 47.6112 16.6666 42.5001 16.6666 36.6667H23.3333C23.3333 41.2779 24.9583 45.2084 28.2083 48.4584C31.4583 51.7084 35.3888 53.3334 40 53.3334C44.6111 53.3334 48.5416 51.7084 51.7916 48.4584C55.0416 45.2084 56.6666 41.2779 56.6666 36.6667H63.3333C63.3333 42.5001 61.4444 47.6112 57.6666 52.0001C53.8888 56.389 49.1111 58.9723 43.3333 59.7501V70.0001H36.6666ZM40 40.0001C40.9444 40.0001 41.7361 39.6806 42.375 39.0417C43.0138 38.4029 43.3333 37.6112 43.3333 36.6667V16.6667C43.3333 15.7223 43.0138 14.9306 42.375 14.2917C41.7361 13.6529 40.9444 13.3334 40 13.3334C39.0555 13.3334 38.2638 13.6529 37.625 14.2917C36.9861 14.9306 36.6666 15.7223 36.6666 16.6667V36.6667C36.6666 37.6112 36.9861 38.4029 37.625 39.0417C38.2638 39.6806 39.0555 40.0001 40 40.0001Z" fill="white"/>
+        </svg>
+
+   </svg>
+   
+  </button>
+  <select id="languageSelect"></select>
+  
+
+
+ 
+  <div class="line"  id="animationContainer">
+  
+    
+       <svg class="line1" xmlns="http://www.w3.org/2000/svg" width="137" height="3" viewBox="0 0 137 3" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M137 3H0V0H137V3Z" fill="#000046" />
+        </svg>
+        <div class="loading-line-container"></div>
+        <svg class="line2" xmlns="http://www.w3.org/2000/svg" width="126" height="3" viewBox="0 0 126 3" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M126 3H0V0H126V3Z" fill="#35C380" />
+        </svg>
+        <svg class="line3" xmlns="http://www.w3.org/2000/svg" width="126" height="3" viewBox="0 0 126 3" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M126 3H0V0H126V3Z" fill="#FF8900" />
+        </svg>
+        <svg class="line4" xmlns="http://www.w3.org/2000/svg" width="128" height="3" viewBox="0 0 128 3" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M128 3H0V0H128V3Z" fill="#FF38D0" />
+        </svg>
+        <svg class="line5" xmlns="http://www.w3.org/2000/svg" width="127" height="3" viewBox="0 0 127 3" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M127 3H0V0H127V3Z" fill="#C500EE" />
+        </svg>
+        <svg class="line6" xmlns="http://www.w3.org/2000/svg" width="126" height="3" viewBox="0 0 126 3" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M126 3H0V0H126V3Z" fill="#5000F2" />
+        </svg>
+        
+        <svg class="line7" xmlns="http://www.w3.org/2000/svg" width="137" height="3" viewBox="0 0 137 3" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M137 3H0V0H137V3Z" fill="#000046" />
+        </svg>
+            
+  
+   
+    </div>
+  <!-- <button id="Translate">Translate Text</button> -->
+  <button id="Translate">Translate </button>
+  <button id="restartButton">Restart </button>
+  
+  
+  <div id="recognizedText"></div>
+ 
+
+
+    <!-- <div id="recognizedText"></div> -->
+    <script src="local_languages.js"></script>
+    <script src="script.js"></script>
+    
+
+
+    </body>
+    </html>
